@@ -1,0 +1,62 @@
+<div class="w-full flex flex-col gap-x-2 justify-center gap-y-2 p-8">
+  <div class="my-4">
+    <p class="font-bold">O Untitle UI</p>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="mt-1" >
+    <p>Home</p>
+  </div>
+
+  <div class="mt-1 whitespace-nowrap" >
+    <p class="inline">Products</p>
+    <mat-icon class="hover:bg-slate-100 hover:cursor-pointer rounded-full align-middle" [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+      <button mat-menu-item>Item 3</button>
+      <button mat-menu-item>Item 4</button>
+      <button mat-menu-item>Item 5</button>
+    </mat-menu>
+  </div>
+  <div class="mt-1 inline whitespace-nowrap" >
+    <p class="inline">Solutions</p>
+    <mat-icon class="hover:bg-slate-100 hover:cursor-pointer rounded-xl align-middle" [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+  </div>
+  <div class="mt-1" >
+    <p>Pricing</p>
+  </div>
+  <div class="mt-1 whitespace-nowrap" >
+    <p class="inline">Resources</p>
+    <mat-icon class="hover:bg-slate-100 hover:cursor-pointer rounded-full align-middle " [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+      <button mat-menu-item>Item 3</button>
+      <button mat-menu-item>Item 4</button>
+      <button mat-menu-item>Item 5</button>
+    </mat-menu>
+  </div>
+  <div class="mt-1" >
+    <p>Company</p>
+  </div>
+  <div class="mt-1" >
+    <p>Career</p>
+  </div>
+
+  <button
+    class="border-black
+            border-2 rounded-lg
+            px-3 py-1
+            font-medium
+            whitespace-nowrap
+            h-10 hover:bg-black
+            hover:text-white
+            -translate-y-1"
+            >
+    Get started
+  </button>
+</div>

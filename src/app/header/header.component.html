@@ -1,0 +1,71 @@
+<nav>
+  <div class="flex flex-row justify-between ">
+    <div class="mt-2 md:mt-1 inline">
+      <p class="font-bold">O Untitle UI</p>
+    </div>
+
+    <div class="md:hidden inline md:w-1/4">
+
+    </div>
+
+    <div class="hidden md:w-7/12 md:flex md:gap-x-2 md:justify-between">
+      <div class="mt-1" >
+        <p>Home</p>
+      </div>
+      <div class="mt-1 whitespace-nowrap" >
+        <p class="inline">Products</p>
+        <mat-icon class="hover:bg-slate-100 hover:cursor-pointer rounded-full align-middle" [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+          <button mat-menu-item>Item 3</button>
+          <button mat-menu-item>Item 4</button>
+          <button mat-menu-item>Item 5</button>
+        </mat-menu>
+      </div>
+      <div class="mt-1 inline whitespace-nowrap" >
+        <p class="inline">Solutions</p>
+        <mat-icon class="hover:bg-slate-100 hover:cursor-pointer rounded-xl align-middle" [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="mt-1" >
+        <p>Pricing</p>
+      </div>
+      <div class="mt-1 whitespace-nowrap" >
+        <p class="inline">Resources</p>
+        <mat-icon class="hover:bg-slate-100 hover:cursor-pointer rounded-full align-middle " [matMenuTriggerFor]="beforeMenu">expand_more</mat-icon>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+          <button mat-menu-item>Item 3</button>
+          <button mat-menu-item>Item 4</button>
+          <button mat-menu-item>Item 5</button>
+        </mat-menu>
+      </div>
+      <div class="mt-1" >
+        <p>Company</p>
+      </div>
+      <div class="mt-1" >
+        <p>Career</p>
+      </div>
+
+      <button
+        class="border-black
+                border-2 rounded-lg
+                px-3 py-1
+                font-medium
+                whitespace-nowrap
+                h-10 hover:bg-black
+                hover:text-white
+                -translate-y-1"
+                >
+        Get started
+      </button>
+    </div>
+
+  </div>
+
+</nav>

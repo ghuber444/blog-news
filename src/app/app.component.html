@@ -1,0 +1,31 @@
+<mat-drawer-container class="example-container  ">
+  <mat-drawer mode="over" [opened]="toggleStatus" closed position="end" #drawer>
+
+    <app-sidebar></app-sidebar>
+
+
+  </mat-drawer>
+
+  <mat-drawer-content class="">
+    <div class="w-full h-4 bg-gradient-to-br from-yellow-400 to-fuchsia-400 mb-2 "></div>
+    <header class="md:flex-none justify-between relative">
+        <app-header></app-header>
+        <div class="md:hidden absolute right-0 top-0">
+          <button mat-button (click)="toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+    </header>
+    <main>
+      <app-landing-page></app-landing-page>
+      <app-posts></app-posts>
+    </main>
+    <footer>
+      <app-footer></app-footer>
+    </footer>
+  </mat-drawer-content>
+
+</mat-drawer-container>
+
+
+

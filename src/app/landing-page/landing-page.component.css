@@ -1,0 +1,23 @@
+.input-button-container {
+  display: flex;
+  align-items: center; /* Optional: vertically center the items */
+}
+
+.input-button-container input {
+  flex: 1; /* Allow the input to expand and take available space */
+  margin-right: 8px; /* Optional: Add spacing between input and button */
+}
+
+/* .bg-black {
+  background-color: black;
+}
+
+.text-white {
+  color: white;
+
+} */
+
+mat-button {
+  background-color: black;
+  color: white;
+}
